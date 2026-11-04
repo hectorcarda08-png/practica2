@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eeeeff;
+  font-family: "Times New Roman", serif;
+}
+
+h1 {
+  text-align: center;
+  padding: 5px;
+}
+
+img {
+  border: 5px solid black;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline;
+}
+
+p {
+  text-align: justify;
+}
+
+/* 1. Título con línea inferior de 5px negra */
+#header {
+  background-color: #c5c3e6;
+  border-bottom: 5px solid black;
+}
+
+#content {
+  overflow: hidden;
+}
+
+/* 2 y 3. Imagen a la derecha con separación de 60px */
+#image {
+  float: right;
+  margin-top: 15px;
+  margin-right: 60px;
+}
+
+/* 10. Los párrafos ocupan el 90% de la ventana */
+#text {
+  clear: both;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* 5, 9, 11. Sombra, sangría y separación de 10px */
+#text p {
+  background-color: #c5c3e6;
+  border: 4px dashed black;
+  box-shadow: 5px 5px 5px #333333;
+  text-indent: 40px;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* 4 y 12. Esquinas superiores redondeadas y fondo que se repite */
+#text p:first-child {
+  border-radius: 30px 30px 0 0;
+  background-image: url("../images/fondoParrafo.png");
+  background-repeat: repeat;
+}
+
+/* 8. Esquinas inferiores redondeadas */
+#text p:last-child {
+  border-radius: 0 0 30px 30px;
+}
+
+#menu {
+  text-align: center;
+  padding: 10px;
+}
+
+#menu a {
+  text-decoration: none;
+  color: #3f2d6b;
+}
+
+/* 7. Línea roja de 5px a la izquierda de cada opción */
+#menu li {
+  border-left: 5px solid red;
+  padding-left: 3px;
+  margin-right: 5px;
+}
+
+/* 13. Subrayado rojo al pasar el ratón */
+#menu li a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+/* 6. Pie con línea superior de 5px negra */
+#footer {
+  background-color: #3f2d6b;
+  color: white;
+  text-align: center;
+  border-top: 5px solid black;
+  padding: 5px;
+}
+
+#footer a {
+  color: white;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+}
+
+@media all and (max-width: 500px) {
+  #image {
+    float: none;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  #image img {
+    width: 90%;
+  }
+}
